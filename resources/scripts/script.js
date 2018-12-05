@@ -8,14 +8,6 @@ var red = false
 function on_load(evt){
 	O=evt.target
 	svgDocument=O.ownerDocument
-	/*
-	for (i = 1; i < 7; i++) {
-		hide("d1_" + i)
-		hide("d2_" + i)
-	}
-	svgDocument.onclick = roll_dice
-	*/
-	roll_dice()
 }
 
 function show(id){
@@ -68,14 +60,4 @@ function roll_dice(){
 	}
 
 	stage += 1
-
-	/*
-	hide("d1_" + d1)
-	hide("d2_" + d2)
-	d1 = Math.floor((Math.random() * 6) + 1)
-	d2 = Math.floor((Math.random() * 6) + 1)
-	show("d1_" + d1)
-	show("d2_" + d2)
-  console.log(d1,d2)
-	*/
 }
