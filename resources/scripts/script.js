@@ -1,5 +1,5 @@
 var svgDocument
-var stage = 1
+var stage = 0
 var guess = "0"
 var real = "0"
 var d2 = 1
@@ -60,4 +60,8 @@ function roll_dice(){
 	}
 
 	stage += 1
+	
+	if (stage == 7) {
+		stage = 0
+	}
 }
